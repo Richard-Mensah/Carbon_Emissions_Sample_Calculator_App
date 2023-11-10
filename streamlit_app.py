@@ -1,5 +1,5 @@
 import streamlit as st
-from streamlit_option_menu import option_menu
+#from streamlit_option_menu import option_menu
 
 #set page/use all #df is your dataframe
 st.set_page_config(layout="wide", page_title="Ecotiva Carbon Footprint")
