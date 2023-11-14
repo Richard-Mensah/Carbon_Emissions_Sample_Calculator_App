@@ -2,7 +2,7 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 
 #set page/use all #df is your dataframe
-st.set_page_config(layout="wide", page_title="Ecotiva Carbon Accounting Software", initial_sidebar_state="expanded")
+st.set_page_config(layout="wide", page_title="Ecotiva Carbon Calculator", initial_sidebar_state="expanded")
 
 st.subheader("Leading Tomorrow's Climate Action Today")
 
@@ -121,7 +121,7 @@ if selected == "Contact":
     st.title(f"You have selected {selected}")
 
 
-st.title ("Ecotiva Carbon Calculator")
+st.title ("Ecotiva Carbon Accounting Software")
 
 #user input
 st.subheader("Your Country")
@@ -145,7 +145,7 @@ with col1:
     
 with col2:
     st.header('Scope 2')
-    st.subheader("Waste Generated per Week (in kg)")
+    st.subheader("Waste Generated per Week (per Ton)")
     waste = st.slider("Waste", 0, key="waste_input")
     #distance = st.number_input("Waste", 0.0, 100.0, key="waste_input")
 
