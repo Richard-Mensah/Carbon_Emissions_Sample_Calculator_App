@@ -2,8 +2,9 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 
 #set page/use all #df is your dataframe
-st.set_page_config(layout="wide", page_title="Ecotiva Carbon Footprint", initial_sidebar_state="expanded")
+st.set_page_config(layout="wide", page_title="Ecotiva Carbon Accounting Software", initial_sidebar_state="expanded")
 
+st.subheader("Leading Tomorrow's Climate Action Today")
 
 EMISSION_FACTORS = {
     "India": {
@@ -64,27 +65,17 @@ EMISSION_FACTORS = {
 
 st.sidebar.header("Your Carbbon Footprint")
 
+
 #Adding option menu in sidebar
-# with st.sidebar:
-#     selected = option_menu(
-#         menu_title="None", #main menu
-#         options=["Home", "Projects", "Contact"],
-#         icons=["house", "book", "envelope"],
-#         menu_icon="cast",
-#         default_index=0,
-#         orientation="horizontal",
-        
-#     )
-## change menu to home page horizontal
-selected = option_menu(
-        menu_title=None, #"main menu"
-        options=["Home", "Projects", "Contact"],
+with st.sidebar:
+     selected = option_menu(
+        menu_title=None, #main menu
+        options=["Home", "About US", "Products", "Solutions", "Company", "Emissions", "Scope 1-3" ],
         icons=["house", "book", "envelope"],
         menu_icon="cast",
         default_index=0,
-        orientation="horizontal",
         styles={
-            "container": {"pardding": "0!important", "background-color": "white"},
+            "container": {"pardding": "0!important", "background-color": ""},
             "icon": {"color": "orange", "font-size": "25px"},
             "nav-link":{
                 "font-size": "25px",
@@ -94,8 +85,30 @@ selected = option_menu(
             },
             "nav-link-selected": {"background-color": "green"},
         }
+         
         
     )
+## change menu to home page horizontal
+# selected = option_menu(
+#         menu_title=None, #"main menu"
+#         options=["Home", "Projects", "Contact"],
+#         icons=["house", "book", "envelope"],
+#         menu_icon="cast",
+#         default_index=0,
+#         orientation="horizontal",
+#         styles={
+#             "container": {"pardding": "0!important", "background-color": "white"},
+#             "icon": {"color": "orange", "font-size": "25px"},
+#             "nav-link":{
+#                 "font-size": "25px",
+#                 "text-align": "left",
+#                 "margin": "0px",
+#                 "--hover-color": "#eee",
+#             },
+#             "nav-link-selected": {"background-color": "green"},
+#         }
+        
+#     )
 
 
 
