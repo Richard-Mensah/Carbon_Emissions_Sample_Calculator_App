@@ -1,8 +1,8 @@
 import streamlit as st
-#from streamlit_option_menu import option_menu
+from streamlit_option_menu import option_menu
 
 #set page/use all #df is your dataframe
-st.set_page_config(layout="wide", page_title="Ecotiva Carbon Footprint")
+st.set_page_config(layout="wide", page_title="Ecotiva Carbon Footprint", initial_sidebar_state="expanded")
 
 
 EMISSION_FACTORS = {
@@ -64,7 +64,7 @@ EMISSION_FACTORS = {
 
 st.sidebar.header("Your Carbbon Footprint")
 
-# #Adding option menu in sidebar
+#Adding option menu in sidebar
 # with st.sidebar:
 #     selected = option_menu(
 #         menu_title="None", #main menu
@@ -75,35 +75,44 @@ st.sidebar.header("Your Carbbon Footprint")
 #         orientation="horizontal",
         
 #     )
-# # ## change menu to home page horizontal
-# # selected = option_menu(
-# #         menu_title=None, #"main menu"
-# #         options=["Home", "Projects", "Contact"],
-# #         icons=["house", "book", "envelope"],
-# #         menu_icon="cast",
-# #         default_index=0,
-# #         orientation="horizontal",
-# #         styles={
-# #             "container": {"pardding": "0!important", "background-color": "white"},
-# #             "icon": {"color": "orange", "font-size": "25px"},
-# #             "nav-link":{
-# #                 "font-size": "25px",
-# #                 "text-align": "left",
-# #                 "margin": "0px",
-# #                 "--hover-color": "#eee",
-# #             },
-# #             "nav-link-selected": {"background-color": "green"},
-# #         }
+## change menu to home page horizontal
+selected = option_menu(
+        menu_title=None, #"main menu"
+        options=["Home", "Projects", "Contact"],
+        icons=["house", "book", "envelope"],
+        menu_icon="cast",
+        default_index=0,
+        orientation="horizontal",
+        styles={
+            "container": {"pardding": "0!important", "background-color": "white"},
+            "icon": {"color": "orange", "font-size": "25px"},
+            "nav-link":{
+                "font-size": "25px",
+                "text-align": "left",
+                "margin": "0px",
+                "--hover-color": "#eee",
+            },
+            "nav-link-selected": {"background-color": "green"},
+        }
         
-# #     )
+    )
 
-  
+
+
+#if option select menu
+if selected == "Home":
+    st.title(f"You have selected {selected}")
+if selected == "Projects":
+    st.title(f"You have selected {selected}")
+if selected == "Contact":
+    st.title(f"You have selected {selected}")
+
 
 st.title ("Ecotiva Carbon Calculator")
 
 #user input
 st.subheader("Your Country")
-country = st.selectbox("Select", ['India','Ghana', 'Nigeria'])
+country = st.selectbox("Select", ['India','UK', 'USA', 'West_Africa', 'East_Africa', 'Central_Africa', 'South_Africa', 'North_Africa' ])
 #country = st.selectbox("Select", ['India', 'Ghana', 'Nigeria'])
 
 #devide into columns 
@@ -193,6 +202,17 @@ if st.button("Calculate Emissions"):
 
     
     
-   
+    # with col3:
+    #     st.subheader('Carbon Emission by Categories')
+    #     st.info(f" Transportation: (transportation_emission) tonnes C02 per year")
+    #     st.info(f" Electricity: (electricity_emissions) tonnes C02 per year")
+    #     st.info(f" Diet: (diet_emissions) tonnes C02 per year")
+    #     st.info(f" Waste: (waste_emissions) tonnes C02 per year")
+        
+    # with col4:
+    #     st.subheader("Total Carbon Footprint")
+    #     st.info(f" Your total carbon footprint is: (total_emissions) tonnes C02 per year")
+    #     st.warning("In 2021, C02 emissions per capital for Ghana was 1.9 tones. Between 2000 and 2021, total emission per capital of Ghana grew substantially from 0.08 to 1.9 rising at an increasing annual rate that reached a maximum of 9.41% in 2021")
+     
 
     
