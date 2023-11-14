@@ -6,13 +6,96 @@ st.set_page_config(layout="wide", page_title="Ecotiva Carbon Footprint")
 
 
 EMISSION_FACTORS = {
-    "India":{
-        "Transport": 0.14, #kgc02/km
-        "Electricity": 0.02, #kgc02/kwl
-        "Diet": 1.25, #kgc02/meal, 2.5 kgc02/kg
-        "Waste": 0.1 #kgc02/meal 
+    "India": {
+        "Transport": 0.14,  # kgCO2/km
+        "Electricity": 0.02,  # kgCO2/kWh
+        "Diet": 1.25,  # kgCO2/meal, 2.5 kgCO2/kg
+        "Waste": 0.1  # kgCO2/meal
+    },
+    "UK": {
+        "Transport": 0.12,  # kgCO2/km
+        "Electricity": 0.03,  # kgCO2/kWh
+        "Diet": 1.15,  # kgCO2/meal, 2.3 kgCO2/kg
+        "Waste": 0.09  # kgCO2/meal
+    },
+    "Germany": {
+        "Transport": 0.13,  # kgCO2/km
+        "Electricity": 0.02,  # kgCO2/kWh
+        "Diet": 1.20,  # kgCO2/meal, 2.4 kgCO2/kg
+        "Waste": 0.1  # kgCO2/meal
+    },
+    "USA": {
+        "Transport": 0.15,  # kgCO2/km
+        "Electricity": 0.025,  # kgCO2/kWh
+        "Diet": 1.35,  # kgCO2/meal, 2.7 kgCO2/kg
+        "Waste": 0.12  # kgCO2/meal
+    },
+    "West_Africa": {
+        "Transport": 0.18,  # kgCO2/km
+        "Electricity": 0.04,  # kgCO2/kWh
+        "Diet": 1.40,  # kgCO2/meal, 2.8 kgCO2/kg
+        "Waste": 0.15  # kgCO2/meal
+    },
+    "East_Africa": {
+        "Transport": 0.17,  # kgCO2/km
+        "Electricity": 0.035,  # kgCO2/kWh
+        "Diet": 1.38,  # kgCO2/meal, 2.76 kgCO2/kg
+        "Waste": 0.14  # kgCO2/meal
+    },
+    "Central_Africa": {
+        "Transport": 0.19,  # kgCO2/km
+        "Electricity": 0.038,  # kgCO2/kWh
+        "Diet": 1.45,  # kgCO2/meal, 2.9 kgCO2/kg
+        "Waste": 0.16  # kgCO2/meal
+    },
+    "South_Africa": {
+        "Transport": 0.16,  # kgCO2/km
+        "Electricity": 0.03,  # kgCO2/kWh
+        "Diet": 1.30,  # kgCO2/meal, 2.6 kgCO2/kg
+        "Waste": 0.11  # kgCO2/meal
+    },
+    "North_Africa": {
+        "Transport": 0.2,  # kgCO2/km
+        "Electricity": 0.036,  # kgCO2/kWh
+        "Diet": 1.48,  # kgCO2/meal, 2.96 kgCO2/kg
+        "Waste": 0.17  # kgCO2/meal
     }
 }
+
+st.sidebar.header("Your Carbbon Footprint")
+
+# #Adding option menu in sidebar
+# with st.sidebar:
+#     selected = option_menu(
+#         menu_title="None", #main menu
+#         options=["Home", "Projects", "Contact"],
+#         icons=["house", "book", "envelope"],
+#         menu_icon="cast",
+#         default_index=0,
+#         orientation="horizontal",
+        
+#     )
+# # ## change menu to home page horizontal
+# # selected = option_menu(
+# #         menu_title=None, #"main menu"
+# #         options=["Home", "Projects", "Contact"],
+# #         icons=["house", "book", "envelope"],
+# #         menu_icon="cast",
+# #         default_index=0,
+# #         orientation="horizontal",
+# #         styles={
+# #             "container": {"pardding": "0!important", "background-color": "white"},
+# #             "icon": {"color": "orange", "font-size": "25px"},
+# #             "nav-link":{
+# #                 "font-size": "25px",
+# #                 "text-align": "left",
+# #                 "margin": "0px",
+# #                 "--hover-color": "#eee",
+# #             },
+# #             "nav-link-selected": {"background-color": "green"},
+# #         }
+        
+# #     )
 
   
 
