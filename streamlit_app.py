@@ -152,14 +152,7 @@ with col2:
     st.subheader("Number of Meals per day")
     meals = st.number_input("Meals", 0, key="meals_input")
 
-# with col3:
-#     st.header('Downloa Databse here')
-#     upload_folder = st.file_uploader("download data")
-     
-    
-    # take_pic = st.camera_input("Take a photo")
-    # st.success("Your photo uploaded successfuly")
-    #normalise inputs
+
     if distance > 0:
         distance = distance * 365
     
