@@ -1,5 +1,6 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
+from PIL import Image
 
 #set page/use all #df is your dataframe
 st.set_page_config(layout="wide", page_title="Ecotiva Carbon Calculator", initial_sidebar_state="expanded")
@@ -88,6 +89,13 @@ with st.sidebar:
          
         
     )
+     
+# ... (existing code)
+
+
+
+# ... (remaining code)
+
 ## change menu to home page horizontal
 # selected = option_menu(
 #         menu_title=None, #"main menu"
@@ -119,6 +127,81 @@ if selected == "Projects":
     st.title(f"You have selected {selected}")
 if selected == "Contact":
     st.title(f"You have selected {selected}")
+
+# Check the selected menu option
+# if selected == "Home":
+#     st.title("Home Page")
+#     # Display content for the Home page
+    
+# elif selected == "About US":
+#     st.title("About Us")
+#     # Display content for the About Us page
+    
+# elif selected == "Products":
+#     st.title("Products")
+#     # Display content for the Products page
+    
+# elif selected == "Solutions":
+#     st.title("Solutions")
+#     # Display content for the Solutions page
+    
+# elif selected == "Company":
+#     st.title("Company")
+#     # Display content for the Company page
+    
+# elif selected == "Emissions":
+#     st.title("Emissions")
+#     # Display content for the Emissions page
+    
+# elif selected == "Scope 1-3":
+#     st.title("Scope 1-3")
+#     # Display content for the Scope 1-3 page
+
+# ... (existing code)
+
+# Check the selected menu option
+if selected == "Home":
+    st.title("Home Page")
+    # Display content for the Home page
+
+elif selected == "About US":
+    st.title("About Us")
+    
+    if st.button("Read About US"):
+        # Displaying an image
+        image = Image.open('econ.png')
+        st.image(image, caption='Ecotiva')
+        st.title("About Ecotiva")
+        st.write("Ecotiva is a leading company is carbon Financing committed to provide organisations, individuals and governments agencies to undertand and to offer the best software to offset their carbon emissions in African and across the globe")
+    # Display content for the About Us page
+
+elif selected == "Products":
+    st.title("Products")
+    # Display content for the Products page
+
+# Add a new conditional block for Company's Mission page
+elif selected == "Company":
+    st.title("Company")
+    # Display content for the Company page
+    # For instance, a button to navigate to the Company's Mission page
+    if st.button("View Company's Mission"):
+        st.title("Company's Mission")
+        # Here, display detailed information about the company's mission, values, etc.
+
+elif selected == "Solutions":
+    st.title("Solutions")
+    # Display content for the Solutions page
+
+elif selected == "Emissions":
+    st.title("Emissions")
+    # Display content for the Emissions page
+
+elif selected == "Scope 1-3":
+    st.title("Scope 1-3")
+    # Display content for the Scope 1-3 page
+
+# ... (remaining code)
+
 
 
 st.title ("Ecotiva Carbon Accounting Software")
