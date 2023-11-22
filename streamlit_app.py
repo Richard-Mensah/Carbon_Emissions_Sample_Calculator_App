@@ -90,82 +90,25 @@ with st.sidebar:
         
     )
      
-# ... (existing code)
 
 
 
-# ... (remaining code)
-
-## change menu to home page horizontal
-# selected = option_menu(
-#         menu_title=None, #"main menu"
-#         options=["Home", "Projects", "Contact"],
-#         icons=["house", "book", "envelope"],
-#         menu_icon="cast",
-#         default_index=0,
-#         orientation="horizontal",
-#         styles={
-#             "container": {"pardding": "0!important", "background-color": "white"},
-#             "icon": {"color": "orange", "font-size": "25px"},
-#             "nav-link":{
-#                 "font-size": "25px",
-#                 "text-align": "left",
-#                 "margin": "0px",
-#                 "--hover-color": "#eee",
-#             },
-#             "nav-link-selected": {"background-color": "green"},
-#         }
-        
-#     )
-
-
-
-#if option select menu
-if selected == "Home":
-    st.title(f"You have selected {selected}")
-if selected == "Projects":
-    st.title(f"You have selected {selected}")
-if selected == "Contact":
-    st.title(f"You have selected {selected}")
-
-# Check the selected menu option
+# #if option select menu
 # if selected == "Home":
-#     st.title("Home Page")
-#     # Display content for the Home page
-    
-# elif selected == "About US":
-#     st.title("About Us")
-#     # Display content for the About Us page
-    
-# elif selected == "Products":
-#     st.title("Products")
-#     # Display content for the Products page
-    
-# elif selected == "Solutions":
-#     st.title("Solutions")
-#     # Display content for the Solutions page
-    
-# elif selected == "Company":
-#     st.title("Company")
-#     # Display content for the Company page
-    
-# elif selected == "Emissions":
-#     st.title("Emissions")
-#     # Display content for the Emissions page
-    
-# elif selected == "Scope 1-3":
-#     st.title("Scope 1-3")
-#     # Display content for the Scope 1-3 page
-
-# ... (existing code)
+#     st.title(f"You have selected {selected}")
+# if selected == "Projects":
+#     st.title(f"You have selected {selected}")
+# if selected == "Contact":
+#     st.title(f"You have selected {selected}")
 
 # Check the selected menu option
+# CREATE PAGES 
 if selected == "Home":
     st.title("Home Page")
     # Display content for the Home page
 
 elif selected == "About US":
-    st.title("About Us")
+    st.title("About Us") 
     
     if st.button("Read About US"):
         # Displaying an image
@@ -177,6 +120,10 @@ elif selected == "About US":
 
 elif selected == "Products":
     st.title("Products")
+    
+    if st.button("Read Our Products"):
+        st.title("Our Prouducts")
+        st.write("Our products includes all green house gases and its equivalents, thus CO2e related emissions")
     # Display content for the Products page
 
 # Add a new conditional block for Company's Mission page
@@ -186,18 +133,44 @@ elif selected == "Company":
     # For instance, a button to navigate to the Company's Mission page
     if st.button("View Company's Mission"):
         st.title("Company's Mission")
+        st.write("Our mission is to provide high qualitty and best carbon emission software to organisations, individuals and the state to calculate their emission and offset them")
         # Here, display detailed information about the company's mission, values, etc.
 
 elif selected == "Solutions":
     st.title("Solutions")
+    
+    if st.button("Ecotiva's Smart Carbon Solution"):
+        st.title("Your Emission's Solution")
+        st.write("Our solutions includes............................................")
     # Display content for the Solutions page
 
 elif selected == "Emissions":
     st.title("Emissions")
+    
+    if st.button("Understand Emissions"):
+        st.title("Types of Emissions")
+        st.write("Emissions are ............................................")
+        #adding extra button
+        if st.button("type1 emission"):
+            st.title("what is type 1 emission")
+            st.write("type 1 emissions include the emissions......")
     # Display content for the Emissions page
 
 elif selected == "Scope 1-3":
     st.title("Scope 1-3")
+    st.write("Emissions are ............................................")
+        #adding extra button
+    if st.button("Scope 1"):
+        st.title("Scope 1 Emissions")
+        st.write("scope emissions include the emissions......")
+       
+        if st.button("Scope 2"):
+            st.title("Scope 2 Emissions")
+            st.write("scope emissions include the emissions......")
+           
+            if st.button("Scope 3"):
+                st.title("Scope 3 Emissions")
+                st.write("scope emissions include the emissions......")
     # Display content for the Scope 1-3 page
 
 # ... (remaining code)
