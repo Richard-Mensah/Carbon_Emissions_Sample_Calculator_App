@@ -169,9 +169,9 @@ elif selected == "Products":
     if st.button("Read Our Products"):
         st.title("Platform Overview")
         st.write("Explore Ecootiva's cutting-edge platform that merges AI precision with comprehensive education. Our platform empowers users with data-driven insights and educational resources to manage and offset their carbon footprint effectivel")
-        st.subheader("Unique Selling Proposition (USP")
+        st.subheader("Unique Selling Proposition (USP)")
         st.write("Ecootiva's distinctiveness lies in our fusion of AI-driven accuracy and comprehensive educational resources. We offer tailored solutions for individuals and businesses, fostering a transformative journey towards environmental stewardship")
-        st.subheader("User Benefits:")
+        st.subheader("User Benefits")
         st.write("Experience the empowerment of understanding and reducing your carbon footprint. Ecootiva's platform offers transparent insights, personalized reduction strategies, and a range of tools to navigate the complexities of carbon offsetting")
         
     # Display content for the Products page
@@ -317,10 +317,11 @@ elif selected == "Emissions":
     # Display content for the Emissions page
 
 elif selected == "Scope 1-3":
-    st.title("Scope 1-3")
+    st.title("Scope 1-3 Emissions")
         #adding extra button
-    if st.button("Scope 1 Emissions"):
+    if st.button("Scope 1 - 3 Emissions"):
         image = Image.open('pic.png')
+        st.image(image, caption='Scope 1 - 3 Emissions')
         st.title("Scope 1 - Direct Emissions")
         st.write("Explore direct emissions stemming from owned or controlled sources, such as fuel combustion and company vehicles. Learn how Ecootiva helps manage these emissions for businesses")
         #
