@@ -115,14 +115,14 @@ elif selected == "About US":
         image = Image.open('econ.png')
         st.image(image, caption='Ecotiva')
         st.title("Ecotiva Excecutiva Summary")
-        st.write("Ecotiva addresses the pressing problem of limited accessibility to a comprehensive platform for individuals and businesses to calculate, track, and offset their carbon footprints. With a user-centric approach, Ecotiva empowers individuals and businesses to easily participate in sustainable emissions reductions. Through a diverse portfolio of verified projects, transparent impact tracking, and personalized recommendations, we bridge the gap between climate-conscious individuals and impactful carbon offset projects. At Ecotiva, we recognize the growing need for convenient carbon offsetting in both the African and German markets. Our approach hinges on transparency and engagement. By offering a diverse array of meticulously verified projects, coupled with real-time impact tracking, we empower users with a tangible sense of their contributions to a greener future. Personalized recommendations further enhance the user experience, making sustainability a personalized journey. Our business model incorporates revenue from individual and corporate subscriptions, project verification fees, and potential strategic partnerships. The scalability and potential for expansion into other sustainability areas contribute to a promising revenue trajectory. Our dedicated team comprises tech and environmental experts, committed to making a positive environmental impact. The African market offers immense potential for carbon offset projects, driven by increasing climate awareness. While some existing platforms lack user-friendliness and transparency, we differentiate through our intuitive interface, robust verification processes, and personalized project suggestions. We aim to disrupt the market with a sustainable business model that involves project developers, corporations, and individual users. By connecting buyers with verified projects, we create a win-win scenario for offset providers and carbon-conscious consumers. Our value proposition lies in offering convenience, transparency, and impactful engagement in the carbon offset ecosystem. In the competitive landscape, our platform stands out with its user-centric design, comprehensive project information, and data-driven insights. We're poised to capture a significant share of the growing carbon offset market in Africa and Germany, driven by our commitment to transparency, innovation, and environmental impact. In summary, our platform bridges the gap in the African and German carbon offset markets, offering a comprehensive solution that empowers users, fosters sustainability, and contributes to the global fight against climate change.")
+        st.write("Ecotiva pioneers accessible and user-centric carbon offset solutions for individuals and businesses, providing a seamless platform to calculate, track, and offset carbon footprints. Our approach focuses on transparency, engagement, and personalized recommendations, differentiating us in the competitive carbon offset market. With a diverse portfolio of verified projects and real-time impact tracking, we empower users to make meaningful contributions to environmental sustainability. Our dedicated team of tech and environmental experts is committed to disrupting the market with a sustainable business model, capturing a significant share in the expanding African and German carbon offset markets. Ecotiva stands out for its intuitive design, comprehensive project information, and data-driven insights, making it a key player in the global fight against climate change.")
         st.title("Business Idea")
         #founding history
         st.subheader("Company Background")
-        st.write("Ecootiva, established as a GmbH, has been at the forefront of driving impactful change since its inception. Founded by a team passionate about environmental sustainability, we've reached significant milestones in our journey towards carbon neutrality, fostering a culture of responsible citizenship.")
+        st.write("Ecotiva is established to be at the forefront of driving impactful environmental change. Founded by a team passionate about environmental sustainability, we aim to reach a significant milestones towards carbon neutrality, fostering a culture of responsible citizenship.")
         #kw
         st.subheader("Values and Commitments")
-        st.write("At Ecootiva, we operate on the principles of integrity, transparency, and environmental stewardship. Our unwavering commitment to sustainability fuels our drive to continuously enhance our platform and empower users to make informed decisions")
+        st.write("At Ecotiva, we operate on the principles of integrity, transparency, and environmental stewardship. Our unwavering commitment to sustainability fuels our drive to continuously enhance our platform and empower users to make informed decisions")
         # st.markdown("Planned Founding Team and Task Distribution")
         # st.markdown("""
         # - Emmanuel Danso - With a background in sustainability and ESG, Emmanuel brings extensive experience in developing user-centric technological solutions that bridge people and sustainability. His innovative thinking and problem-solving skills have been instrumental in shaping the platform's features and functionality.
@@ -168,11 +168,11 @@ elif selected == "Products":
     
     if st.button("Read Our Products"):
         st.title("Platform Overview")
-        st.write("Explore Ecootiva's cutting-edge platform that merges AI precision with comprehensive education. Our platform empowers users with data-driven insights and educational resources to manage and offset their carbon footprint effectivel")
+        st.write("Explore Ecotiva's cutting-edge platform that merges AI precision with comprehensive education. Our platform empowers users with data-driven insights and educational resources to manage and offset their carbon footprint effectivel")
         st.subheader("Unique Selling Proposition (USP)")
-        st.write("Ecootiva's distinctiveness lies in our fusion of AI-driven accuracy and comprehensive educational resources. We offer tailored solutions for individuals and businesses, fostering a transformative journey towards environmental stewardship")
+        st.write("Ecotiva's distinctiveness lies in our fusion of AI-driven accuracy and comprehensive educational resources. We offer tailored solutions for individuals and businesses, fostering a transformative journey towards environmental stewardship")
         st.subheader("User Benefits")
-        st.write("Experience the empowerment of understanding and reducing your carbon footprint. Ecootiva's platform offers transparent insights, personalized reduction strategies, and a range of tools to navigate the complexities of carbon offsetting")
+        st.write("Experience the empowerment of understanding and reducing your carbon footprint. Ecotiva's platform offers transparent insights, personalized reduction strategies, and a range of tools to navigate the complexities of carbon offsetting")
         
     # Display content for the Products page
     
@@ -191,10 +191,6 @@ elif selected == "Company":
         st.markdown("""
         - Refined Prototype: Introducing our platform armed with a meticulously refined prototype, blending AI, ML, user interfaces, and educational resources.
         - Fortified User Engagement: A vibrant community nurtured through insightful content, interactive workshops, and strategic engagement initiatives.
-        - Marketing Symphony: A comprehensive marketing strategy leveraging digital platforms, social media engagement, and strategic partnerships to generate buzz.
-        - Impact Amplification: Each carbon offset transaction contributes to a collective effort, showcasing the platform's efficacy and role in shaping a sustainable future.
-        - Inception of Growth: Market entry paves the way for expansion in user base and geographical reach, fueling innovations and features in alignment with user needs.
-        - Resonating Transformation: Phase 4 crystallizes aspirations into reality, marking the prelude to a symphony of impact that will reverberate for generations.
         """)
         #
         # st.title("Towards Subsequent Funding Phases: Envisioning Growth")
@@ -248,18 +244,18 @@ elif selected == "Solutions":
     if st.button("Ecotiva's Smart Carbon Solution"):
         st.title(" Ecotiva's Solution")
         st.subheader("Holistic Carbon Offset Platform")
-        st.write("Ecootiva offers a comprehensive solution that goes beyond traditional carbon offsetting. Our platform merges cutting-edge AI technology with robust educational resources to empower individuals and businesses in their journey towards environmental stewardship")
+        st.write("Ecotiva offers a comprehensive solution that goes beyond traditional carbon offsetting. Our platform merges cutting-edge AI technology with robust educational resources to empower individuals and businesses in their journey towards environmental stewardship")
         #
         st.subheader("AI-Driven Precision")
         st.write("At the core of our solution lies AI-driven precision. Our platform utilizes advanced algorithms to accurately calculate carbon footprints, providing personalized strategies aligned with individual lifestyles or business operations. This precision extends beyond offset calculations, offering tailored insights and recommendations for sustainable practices")
         st.subheader("User-Centric Approach")
-        st.write("Ecootiva's solution is designed with the user in mind. Whether it's individuals seeking to reduce their personal carbon footprint or businesses aiming for sustainable operations, our user-centric approach ensures accessibility, transparency, and efficacy in offsetting strategies")
+        st.write("Ecotiva's solution is designed with the user in mind. Whether it's individuals seeking to reduce their personal carbon footprint or businesses aiming for sustainable operations, our user-centric approach ensures accessibility, transparency, and efficacy in offsetting strategies")
         #
         st.subheader("Flexible and Versatile")
         st.write("Our platform offers a range of features and services, including subscription plans, transaction fees for offsetting, corporate services, data insights, and API integration. This flexibility caters to diverse user needs, ensuring an inclusive and adaptable solution")
         #
         st.subheader("Driving Change, Creating Collaboration")
-        st.write("Beyond mere calculations, Ecootiva fosters a culture of collaboration, education, and action. By bringing together individuals, businesses, and industry experts on a unified platform, we catalyze collective efforts towards a sustainable future, aligning with governmental sustainability visions and global climate objectives")
+        st.write("Beyond mere calculations, Ecotiva fosters a culture of collaboration, education, and action. By bringing together individuals, businesses, and industry experts on a unified platform, we catalyze collective efforts towards a sustainable future, aligning with governmental sustainability visions and global climate objectives")
         
         #
         # st.subheader("Technology-Driven Transformation")
@@ -310,7 +306,7 @@ elif selected == "Emissions":
         st.title("Carbon Emissions Overview")
         st.write("Understand the significance of carbon emissions and their profound impact on ecosystems, biodiversity, and planetary health. Learn how managing emissions plays a pivotal role in combatting climate change")
         st.subheader("Measurement and Calculation")
-        st.write("Discover Ecootiva's methodologies and tools used to accurately measure and calculate carbon emissions. Dive into the complexities of Scope 1, 2, and 3 emissions, gaining insights into their sources and implications")
+        st.write("Discover Ecotiva's methodologies and tools used to accurately measure and calculate carbon emissions. Dive into the complexities of Scope 1, 2, and 3 emissions, gaining insights into their sources and implications")
         
         #adding extra button
        
@@ -329,7 +325,7 @@ elif selected == "Scope 1-3":
         st.write("Understand the indirect emissions arising from purchased electricity, heating, or cooling consumed by companies. Discover how Ecootiva aids in managing and reducing these emissions.")
         #
         st.title("Scope 3 - Indirect Value Chain Emissions") 
-        st.write("Delve into the comprehensive nature of Scope 3 emissions, spanning the entire value chain. Learn how Ecootiva addresses these indirect emissions, including supply chain impact, employee commuting, and product usage")
+        st.write("Delve into the comprehensive nature of Scope 3 emissions, spanning the entire value chain. Learn how Ecotiva addresses these indirect emissions, including supply chain impact, employee commuting, and product usage")
                
 # ... (remaining code)
 
